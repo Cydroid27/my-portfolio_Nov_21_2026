@@ -1,0 +1,532 @@
+---
+const site = {
+  name: 'Cyrus Jalen Cornejo',
+  role: 'Tech VA-Business Automation Specialist',
+  tagline: 'Process-minded automation for businesses that run on follow-ups',
+  location: 'Candelaria, Quezon',
+  email: 'cyrus.cornejo09@gmail.com',
+  about: [
+    "I'm CY, an automation specialist based in the Philippines. Before this, I spent 7+ years in administrative and HR operations for a government education office",
+    "which means I didn't come into automation from a tech background. I came into it from watching how much time gets lost to manual follow-ups, missed messages, and processes that live in someone's head instead of a system.",
+    "Now I build that system for you  using tools like ManyChat, Zapier, n8n, GHL and  so your business runs the same whether you're on--site, asleep, or on holiday.",
+  ],
+  stats: [
+    { value: '7+', label: 'Administrative and HR operations' },
+    { value: '9', label: 'Automations Projects' },
+    
+  ],
+};
+
+const projects = [
+ {
+  title: 'Appointment Scheduling (Make.com)',
+  description: `The problem: Manually checking who's free, texting back and forth, double-booking a slot someone else already took.
+What I built: A form-to-calendar system that checks real-time availability, books the first open slot automatically, and updates your calendar — no back-and-forth required.
+The result: Clients book themselves in seconds. You just show up.`,
+  tags: ['Make.com', 'Automation', 'Zapier'],
+  image: '/AppointmentScheduling.png',
+  href: '#',
+  year: '2026',
+},
+
+ {
+  title: 'Asana Lead Enrichment & Pipeline Automation (Zapier)',
+  description: `The problem: Leads sitting in different pipeline stages with no consistent next step — some get forgotten, some get a folder, some never get a follow-up email.
+What I built: A system that watches every task update in Asana and routes the lead by stage — creating folders, spinning up content tasks, and sending the right follow-up email automatically, with built-in delays so nothing feels robotic.
+The result: Every lead gets the right next action, at the right time, without you tracking it manually.`,
+  tags: [, 'Automation', 'Zapier'],
+  image: '/AsanaLeadEnrichment.png',
+  href: '#',
+  year: '2026',
+},
+ {
+  title: 'Automated Lead Enrichment & Notification System (Zapier)',
+  description: `The problem: New leads coming in through a form or tool, sitting unnoticed until someone happens to check their inbox.
+What I built: A webhook-driven system that catches new leads instantly, enriches the data, and splits them by condition — logging qualified leads to a sheet with a live Slack alert, or triggering a targeted follow-up email.
+The result: Your team knows about a new lead within seconds, not hours.`,
+  tags: [, 'Automation', 'Zapier'],
+  image: '/AutomatedLeadsEnrichment.png',
+  href: '#',
+  year: '2026',
+},
+ {
+  title: 'Client Onboarding Automation (Make.com)',
+  description: `The problem: Onboarding checklists that live in someone's head — a welcome email forgotten, a client folder never created, no one told to prep for the kickoff call.
+What I built: A system that fires the moment a new client is added: sends the welcome email, creates their folder, books the kickoff on your calendar, and pings your team in Slack — automatically.
+The result: Every client gets the same smooth start, and nothing falls through the cracks.`,
+  tags: [, 'Automation', 'Make.com'],
+  image: '/ClientOnBoarding.png',
+  href: '#',
+  year: '2026',
+},
+   {
+  title: 'AI Website Chat Agent with Knowledge Base & CRM Lead Capture (n8n)',
+  description: `The problem: Website visitors asking the same questions at all hours, with no one available to answer — and interested leads slipping away because no one captured their info.
+What I built: An AI chat agent embedded on the website that answers from a custom knowledge base (via Qdrant vector search), with a fallback model if the primary AI errors out, and automatically saves qualified leads straight to the CRM mid-conversation.
+The result: Visitors get instant, accurate answers 24/7, and every qualified conversation becomes a captured lead — no manual chat monitoring required..`,
+  tags: [, 'Automation', 'n8n','RAG / VectorSearch(Qdrant)','CRM Integration'],
+  image: '/AI_Website_Chat Agent_with Knowledge Base_CRM_Lead Capture.png',
+  href: '#',
+  year: '2026',
+},
+   {
+  title: 'Knowledge Base Ingestion Pipeline (n8n)',
+  description: `The problem: An AI agent is only as good as what it knows — feeding it new documents manually every time content changes doesn’t scale.
+What I built: An ingestion workflow that takes raw documents, chunks them, generates embeddings, and inserts them into a Qdrant vector database with one manual trigger.
+The result: Updating the AI agent’s knowledge is now a one-click process instead of a manual rebuild.`,
+  tags: [, 'Automation', 'n8n','RAG/VectorSearch(Qdrant)','Text Embeddings','Data Ingestion'],
+  image: '/Knowledge Base Ingestion Pipeline (n8n).png',
+  href: '#',
+  year: '2026',
+},
+ {
+  title: 'Document & Email Classification Automation (n8n)',
+  description: `The problem: Incoming emails and documents — invoices, resumes, spam — all landing in one inbox with no way to sort or act on them automatically.
+What I built: An AI-powered workflow that classifies and extracts data from each email, validates the extracted fields, then routes it: flagged for human review if anything’s missing or suspicious, or straight to a tracking sheet if it’s clean.
+The result: Clean documents get processed automatically, flagged ones get caught before mistakes happen, and nothing requires manual sorting.`,
+  tags: [, 'n8n', 'AI Document Processing', 'Data Extraction & Validation', 'Email Automation', 'Human-in-the-Loop Workflows', 'GoHighLevel'],
+  image: '/Document_Email Classification Automation (n8n).png',
+  href: '#',
+  year: '2026',
+},
+ {
+  title: 'Lead Research & Outreach Scoring Agent (n8n)',
+  description: `The problem: Sales teams spending hours manually researching and ranking leads before deciding who’s worth a follow-up.
+What I built: An AI agent that researches each lead, scores them by fit using only verifiable facts, and routes them into Hot (ready for outreach), Warm (nurture), Cold (log only), or Needs Data queues.
+The result: Reps spend their time only on leads worth chasing, with every lead automatically triaged instead of manually reviewed..`,
+  tags: [, 'n8n', 'AI Lead Scoring', 'Lead Qualification', 'Conditional Routing', 'Prompt Engineering',],
+  image: '/Lead Research & Outreach Scoring Agent (n8n).png',
+  href: '#',
+  year: '2026',
+},
+ {
+  title: 'AI Receptionist Agent',
+  description: `The problem: Leads sitting in different pipeline stages with no consistent next step — some get forgotten, some get a folder, some never get a follow-up email.
+What I built: A system that watches every task update in Asana and routes the lead by stage — creating folders, spinning up content tasks, and sending the right follow-up email automatically, with built-in delays so nothing feels robotic.
+The result: Every lead gets the right next action, at the right time, without you tracking it manually.`,
+  tags: [, 'n8n', 'AI Agent Development', 'FAQ Automation', 'Prompt Injection Defense', 'Human Handoff Workflows', ],
+  image: '/Appointment Setter AI Agent (n8n).png',
+  href: '#',
+  year: '2026',
+},
+
+]
+const skillGroups = [
+  { category: 'AUTOMATION PLATFORMS', items: ['ManyChat', 'GoHighLevel', 'n8n', 'Zapier', 'Make.com', ] },
+  { category: 'WORKSPACE & PRODUCTIVITY', items: ['Google Workspace (Sheets, Gmail, Calendar, Drive)', 'Microsoft 365 (Outlook, Excel, Teams)', 'Asana', 'Typeform'] },
+  { category: 'AI & INTEGRATIONS', items: ['OpenAI', 'Webhooks & REST APIs', 'JSON', 'Railway'] },
+  { category: 'EDITING & DESIGN', items: ['Canva', 'CapCut', 'Figma', 'Loom'] },
+];
+
+const socials = [
+  { label: 'Facebook', href: 'https://www.facebook.com/KingCy23', handle: '@yourusername' },
+  { label: 'LinkedIn', href: 'www.linkedin.com/in/cycornejo', handle: '/in/yourusername' },
+  { label: 'threads', href: 'https://www.threads.com/@_cy_jalen_28_?hl=en', handle: '@yourusername' },
+];
+
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{site.name} — {site.role}</title>
+    <meta name="description" content={site.tagline} />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0a0a'/><circle cx='50' cy='50' r='18' fill='%23ff4d00'/></svg>" />
+
+    <style is:global>
+      :root {
+        --ink: #0a0a0a;
+        --paper: #fafafa;
+        --accent: #ff4d00;
+        --muted: #6b6b6b;
+        --line: #e5e5e5;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        background: var(--paper);
+        color: var(--ink);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      img { display: block; max-width: 100%; }
+      a { color: inherit; text-decoration: none; }
+      ul { list-style: none; }
+      :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+      ::selection { background: var(--accent); color: white; }
+
+      .container { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem; }
+      @media (min-width: 640px) { .container { padding: 0 2rem; } }
+      @media (min-width: 1024px) { .container { padding: 0 3rem; } }
+
+      .eyebrow {
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: var(--muted);
+      }
+
+      /* Header */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        border-bottom: 1px solid var(--line);
+        background: rgba(250, 250, 250, 0.85);
+        backdrop-filter: blur(12px);
+      }
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 4rem;
+        gap: 1.5rem;
+      }
+      .wordmark {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+      }
+      .dot { width: 0.6rem; height: 0.6rem; border-radius: 999px; background: var(--accent); display: inline-block; }
+      nav ul { display: flex; align-items: center; gap: 1.5rem; }
+      nav a {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--muted);
+        transition: color 0.2s;
+      }
+      nav a:hover { color: var(--ink); }
+
+      /* Hero */
+      .hero { padding: 6rem 0 5rem; }
+      @media (min-width: 640px) { .hero { padding: 8rem 0 7rem; } }
+      .hero h1 {
+        font-size: clamp(3rem, 9vw, 6.5rem);
+        font-weight: 900;
+        line-height: 0.95;
+        letter-spacing: -0.045em;
+        margin-top: 1.5rem;
+      }
+      .hero h1 .muted { display: block; color: #a3a3a3; }
+      .hero p.tagline {
+        margin-top: 2rem;
+        max-width: 40rem;
+        font-size: 1.125rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+      @media (min-width: 640px) { .hero p.tagline { font-size: 1.25rem; } }
+      .hero-actions { margin-top: 2.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--ink);
+        color: var(--paper);
+        border-radius: 999px;
+        font-size: 0.875rem;
+        font-weight: 600;
+        transition: background 0.2s;
+      }
+      .btn:hover { background: var(--accent); }
+      .link {
+        font-size: 0.875rem;
+        font-weight: 600;
+        border-bottom: 1px solid currentColor;
+        padding-bottom: 2px;
+      }
+
+      /* Sections */
+      section.bordered { border-top: 1px solid var(--line); padding: 5rem 0; }
+      @media (min-width: 640px) { section.bordered { padding: 7rem 0; } }
+      .section-title {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        font-weight: 900;
+        line-height: 1.15;
+        letter-spacing: -0.03em;
+        margin-top: 1rem;
+        max-width: 40rem;
+      }
+
+      /* About */
+      .about-grid { display: grid; gap: 3rem; }
+      @media (min-width: 1024px) { .about-grid { grid-template-columns: 1fr 2fr; gap: 4rem; } }
+      .about-body { display: flex; flex-direction: column; gap: 1.25rem; font-size: 1.0625rem; color: #404040; line-height: 1.75; }
+      .stats {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+        padding-top: 2.5rem;
+        border-top: 1px solid var(--line);
+      }
+      @media (min-width: 640px) { .stats { grid-template-columns: repeat(3, 1fr); } }
+      .stat-value { font-size: 2.5rem; font-weight: 900; letter-spacing: -0.045em; display: block; }
+      .stat-label { display: block; margin-top: 0.5rem; font-size: 0.875rem; color: var(--muted); }
+
+      /* Projects */
+      .projects-header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1.5rem; margin-bottom: 4rem; }
+      .projects-count { font-size: 0.875rem; color: var(--muted); }
+      .projects-grid { display: grid; gap: 1.5rem; }
+      @media (min-width: 640px) { .projects-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; } }
+      .card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        overflow: hidden;
+        background: white;
+        transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+        border-color: var(--ink);
+        box-shadow: 0 24px 48px -24px rgba(10,10,10,0.35);
+      }
+      .card-image { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #f5f5f5; }
+      .card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
+      .card:hover .card-image img { transform: scale(1.06); }
+      .card-year {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: rgba(250,250,250,0.9);
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        backdrop-filter: blur(4px);
+      }
+      .card-body { padding: 1.5rem; display: flex; flex-direction: column; flex: 1; }
+      @media (min-width: 640px) { .card-body { padding: 1.75rem; } }
+      .card h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        transition: color 0.2s;
+      }
+      .card:hover h3 { color: var(--accent); }
+      .card p { margin-top: 0.75rem; font-size: 0.9375rem; color: var(--muted); flex: 1; line-height: 1.65; }
+      .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
+      .tag {
+        padding: 0.25rem 0.75rem;
+        background: #f5f5f5;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: var(--muted);
+      }
+
+      /* Skills */
+      .skills-grid { display: grid; gap: 2.5rem; }
+      @media (min-width: 640px) { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
+      @media (min-width: 1024px) { .skills-grid { grid-template-columns: repeat(4, 1fr); gap: 2rem; } }
+      .skill-group { border-top: 2px solid var(--ink); padding-top: 1.25rem; }
+      .skill-group h3 { font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+      .skill-group ul { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; }
+      .skill-group li { color: var(--muted); transition: color 0.2s; }
+      .skill-group li:hover { color: var(--ink); }
+
+      /* Footer */
+      footer { background: var(--ink); color: var(--paper); margin-top: 0; }
+      .footer-inner { padding: 5rem 0; }
+      @media (min-width: 640px) { .footer-inner { padding: 7rem 0; } }
+      .footer-cta { font-size: clamp(2.25rem, 7vw, 3.75rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.045em; margin-top: 1rem; max-width: 40rem; }
+      .footer-email {
+        display: inline-block;
+        margin-top: 2rem;
+        font-size: 1.125rem;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(255,255,255,0.4);
+        padding-bottom: 4px;
+        transition: color 0.2s, border-color 0.2s;
+      }
+      .footer-email:hover { color: var(--accent); border-color: var(--accent); }
+      .footer-eyebrow { color: #a3a3a3; }
+      .social-list {
+        display: grid;
+        gap: 1.5rem;
+        margin-top: 4rem;
+        padding-top: 2.5rem;
+        border-top: 1px solid rgba(255,255,255,0.1);
+      }
+      @media (min-width: 640px) { .social-list { grid-template-columns: repeat(3, 1fr); } }
+      .social-list a {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        transition: border-color 0.2s;
+      }
+      .social-list a:hover { border-color: var(--accent); }
+      .social-list a:hover .social-label { color: var(--accent); }
+      .social-label { font-weight: 600; transition: color 0.2s; }
+      .social-handle { font-size: 0.875rem; color: #a3a3a3; }
+      .footer-bottom {
+        margin-top: 3.5rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 0.875rem;
+        color: #a3a3a3;
+      }
+      @media (min-width: 640px) { .footer-bottom { flex-direction: row; justify-content: space-between; align-items: center; } }
+      .footer-bottom .dot-inline { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 999px; background: var(--accent); margin-right: 0.5rem; }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a href="#top" class="wordmark">
+          <span class="dot"></span>
+          <span>{site.name}</span>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+        <img 
+  src="/Formal.jpg" 
+  alt="Portrait of {site.name}" 
+  width="160" 
+  height="160" 
+  style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; margin-bottom: 2rem;"
+/>
+          <p class="eyebrow"><span class="dot" style="margin-right:0.5rem;"></span>{site.location}</p>
+          <h1>
+            {site.name}.
+            <span class="muted">{site.role}.</span>
+          </h1>
+          <p class="tagline">{site.tagline}</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn">View my work →</a>
+            <a href={`mailto:${site.email}`} class="link">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="bordered">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">About</p>
+            <p class="section-title">A business admin who automates, and an automator who still cares about the follow-up.</p>
+          </div>
+          <div>
+            <div class="about-body">
+              {site.about.map((p) => <p>{p}</p>)}
+            </div>
+            <div class="stats">
+              {site.stats.map((s) => (
+                <div>
+                  <span class="stat-value">{s.value}</span>
+                  <span class="stat-label">{s.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="bordered">
+        <div class="container">
+          <div class="projects-header">
+            <div>
+              <p class="eyebrow">Selected Work</p>
+              <p class="section-title">Projects I've shipped and still stand behind.</p>
+            </div>
+            <p class="projects-count">{projects.length} projects · 2023–2025</p>
+          </div>
+          <div class="projects-grid">
+            {projects.map((project, i) => (
+              <a href={project.href} class="card">
+                <div class="card-image">
+                  <img src={project.image} alt="" loading={i < 2 ? 'eager' : 'lazy'} decoding="async" />
+                  <span class="card-year">{project.year}</span>
+                </div>
+                <div class="card-body">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <ul class="tags">
+                    {project.tags.map((tag) => <li class="tag">{tag}</li>)}
+                  </ul>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="bordered">
+        <div class="container">
+          <p class="eyebrow">Skills &amp; Tools</p>
+          <p class="section-title" style="margin-bottom: 3rem;">The toolkit I reach for most days.</p>
+          <div class="skills-grid">
+            {skillGroups.map((group) => (
+              <div class="skill-group">
+                <h3>{group.category}</h3>
+                <ul>
+                  {group.items.map((item) => <li>{item}</li>)}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container footer-inner">
+        <p class="eyebrow footer-eyebrow">Contact</p>
+        <p class="footer-cta">Let's build something fast.</p>
+        <a href={`mailto:${site.email}`} class="footer-email">{site.email}</a>
+
+        <ul class="social-list">
+          {socials.map((s) => (
+            <li>
+              <a href={s.href} target="_blank" rel="noopener noreferrer">
+                <span class="social-label">{s.label}</span>
+                <span class="social-handle">{s.handle}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <div class="footer-bottom">
+          <p>© {year} {site.name}. All rights reserved.</p>
+          <p><span class="dot-inline"></span>Built with Astro · Hosted on Cloudflare Pages</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
